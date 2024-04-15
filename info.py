@@ -16,14 +16,14 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '14505719'))
 API_HASH = environ.get('API_HASH', '620f0a2aa2cd1474a4953619b3e3643d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6349836833:AAENMU1xnpJpaWjIAD6GnO6XR6rAEYGhaVI')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6972144657:AAHQZphiGiV9ZKqqc0fJuybb9Dj8Ny_djUE')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/674a7347d5f6179ff4f8e.jpg https://telegra.ph/file/674a7347d5f6179ff4f8e.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/674a7347d5f6179ff4f8e.jpg")
+PICS = (environ.get('PICS', '')).split()
+NOR_IMG = environ.get("NOR_IMG", "")
 TUTORIAL_VIDEO = environ.get("TUTORIAL_VIDEO", "")
 MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/674a7347d5f6179ff4f8e.jpg")
